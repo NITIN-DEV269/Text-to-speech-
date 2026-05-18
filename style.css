@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61)
+}
+
+.heading {
+    margin-bottom: 60px;
+    font-size: 50px;
+    color: #ffff;
+    font-weight: 500;
+    /* padding: 4px; */
+}
+
+.heading span {
+    background-color: #ff2b64;
+    border-radius: 8px;
+    padding: 4px 14px;
+    font-weight: 400;
+}
+
+.input textarea {
+    width: 100%;
+    max-width: 550px;
+    min-width: 280px;
+    height: 300px;
+    background-color: #3f3d85;
+    opacity: 0.8;
+    font-size: 18px;
+    padding: 15px 18px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    resize: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.input textarea::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 42px;
+    margin-top: 36px;
+}
+
+.buttons select {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    height: 55px;
+
+    background-color: #3f3d85;
+    color: #ffffff;
+
+    border-radius: 14px;
+    border: 1px solid rgb(128, 154, 255);
+
+    outline: none;
+
+    padding: 0 50px 0 18px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("./images/dropdown.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: right 18px center;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.buttons button {
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px 25px;
+    background-color: #ff2b64;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+
+}
+
+.buttons button img {
+    width: 14px;
+    text-align: center;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.input textarea {
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+
+
+.buttons button {
+    height: 55px;
+    padding: 0 28px;
+
+    border-radius: 14px;
+    background-color: #ff2b64;
+    border: none;
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.buttons button img {
+    width: 16px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 35px;
+        line-height: 1.4;
+    }
+
+    .input textarea {
+        height: 250px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .heading {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .heading span {
+        padding: 4px 10px;
+    }
+
+    .input textarea {
+        height: 220px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 14px;
+    }
+
+    .buttons select {
+        width: 100%;
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .buttons button {
+        width: 100%;
+        height: 52px;
+        font-size: 16px;
+    }
+}
